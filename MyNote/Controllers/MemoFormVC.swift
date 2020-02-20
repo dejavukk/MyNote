@@ -9,7 +9,12 @@
 import UIKit
 
 class MemoFormVC: UIViewController {
-
+    
+    var subject: String!
+    
+    @IBOutlet var contents: UITextView!
+    @IBOutlet var preview: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,5 +31,13 @@ class MemoFormVC: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    @IBAction func save(_ sender: Any) {
+    }
+    
+    @IBAction func pick(_ sender: Any) {
+    }
+    
+    
 
 }
