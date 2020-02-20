@@ -8,8 +8,9 @@
 
 import UIKit
 
-class MemoFormVC: UIViewController {
+class MemoFormVC: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextViewDelegate {
     
+    // 내용의 첫 줄을 추춘하여 제목으로 사용하는 변수.
     var subject: String!
     
     @IBOutlet var contents: UITextView!
@@ -19,6 +20,7 @@ class MemoFormVC: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.contents.delegate = self
     }
     
 
@@ -32,12 +34,42 @@ class MemoFormVC: UIViewController {
     }
     */
     
+    // 메모 저장
     @IBAction func save(_ sender: Any) {
+        
+        
     }
     
+    // 텍스트뷰에 텍스트 내용이 변경될 때마다 호출되는 메소드.
+    func textViewDidChange(_ textView: UITextView) {
+        
+    }
+    
+    
+    
+    
+    // 이미지 가져오기.
     @IBAction func pick(_ sender: Any) {
+        
+        // 인스턴스 생성
+        let picker = UIImagePickerController()
+        
+        picker.delegate = self
+        picker.allowsEditing = true
+        
+        // 이미지 피커 화면 표시
+        self.present(picker, animated: false)
+        
     }
     
-    
-
+    // 이미지를 선택했을 때 호출되는 메소드
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        
+        // 선택된 이미지를 미리보기에 표시
+        self.preview.image = info[UIImagePickerController.InfoKey.editedImage] as? UIImage
+        
+        // 이미지 피커 컨트롤러를 닫는다.
+        picker.dismiss(animated: false)
+        
+    }
 }
