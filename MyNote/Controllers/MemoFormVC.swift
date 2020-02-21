@@ -43,6 +43,12 @@ class MemoFormVC: UIViewController, UIImagePickerControllerDelegate, UINavigatio
     // 텍스트뷰에 텍스트 내용이 변경될 때마다 호출되는 메소드.
     func textViewDidChange(_ textView: UITextView) {
         
+        let contents = textView.text as NSString
+        let length = ((contents.length > 15) ? 15 : contents.length)
+        self.subject = contents.substring(with: NSRange(location: 0, length: length))
+        
+        self.navigationItem.title = subject
+        
     }
     
     
