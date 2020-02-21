@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     /*
      배열 변수를 AppDelegate 클래스에 저장하는 이유 : 접근성, 데이터 보존, 일관성
      */
-    var momoList = [MemoData]()
+    var memolist = [MemoData]()
 
 
 
