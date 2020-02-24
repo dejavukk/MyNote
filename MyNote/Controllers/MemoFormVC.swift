@@ -75,9 +75,6 @@ class MemoFormVC: UIViewController, UIImagePickerControllerDelegate, UINavigatio
         
     }
     
-    
-    
-    
     // 이미지 가져오기.
     @IBAction func pick(_ sender: Any) {
         
