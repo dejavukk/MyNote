@@ -13,16 +13,19 @@ class MemoListVC: UITableViewController {
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
 
     
-    // 앱의 생명주기 관련.
+    // 앱의 생명주기 관련. 최초에 뷰가 로드되는 시점에만 호출.
     override func viewDidLoad() {
         super.viewDidLoad()
         
         
     }
     
-    // 앱의 생명주기 관련, 화면이 나타날 때 호출되는 메소드.
+    // 앱의 생명주기 관련, 해당 뷰 컨트롤러가 기기 스크린에 출력될 때마다 호출되는 메소드.
     override func viewWillAppear(_ animated: Bool) {
-        <#code#>
+        
+        // 테이블 데이터를 다시 읽는다.  행을 구성하는 로직이 다시 실행
+        self.tableView.reloadData()
+        
     }
 
     // 테이블 행의 개수를 결정하는 메소드.
@@ -56,10 +59,6 @@ class MemoListVC: UITableViewController {
         
         // 6. cell 객체를 리턴한다.
         return cell
-        
-        
-        
-
 
     }
     
