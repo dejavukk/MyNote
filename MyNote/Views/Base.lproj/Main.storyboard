@@ -11,7 +11,7 @@
         <scene sceneID="aiW-GR-knX">
             <objects>
                 <tableViewController id="9LP-XR-u3o" customClass="MemoListVC" customModule="MyNote" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="0U2-pQ-uqL">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="0U2-pQ-uqL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -199,6 +199,11 @@
                         <viewLayoutGuide key="safeArea" id="QE9-eb-Zg0"/>
                     </view>
                     <navigationItem key="navigationItem" id="a4O-T8-hwi"/>
+                    <connections>
+                        <outlet property="contents" destination="BdM-hL-wmE" id="Nml-VG-xZR"/>
+                        <outlet property="img" destination="Tvu-5u-u8Y" id="B6N-ki-cJ1"/>
+                        <outlet property="subject" destination="TXn-e3-o2t" id="wqi-2P-laq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gfx-4c-f0C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

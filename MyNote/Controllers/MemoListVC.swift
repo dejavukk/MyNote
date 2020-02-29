@@ -62,4 +62,9 @@ class MemoListVC: UITableViewController {
 
     }
     
+    // 테이블 행을 선택했을 때 호출되는 메소드.
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+    }
+    
 }
