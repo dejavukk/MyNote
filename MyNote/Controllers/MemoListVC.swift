@@ -32,6 +32,7 @@ class MemoListVC: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         let count = self.appDelegate.memolist.count
+        
         return count
     }
     
@@ -65,6 +66,17 @@ class MemoListVC: UITableViewController {
     // 테이블 행을 선택했을 때 호출되는 메소드.
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+        // 1. memolist 배열에서 선택된 행에 맞는 데이터를 꺼낸다.
+        let row = self.appDelegate.memolist[indexPath.row]
+        
+        // 2. 상세 화면의 인스턴스 생성.
+        guard let vc = self.storyboard?.instantiateViewController(identifier: "MemoRead") as? MemoReadVC else {
+            
+            return
+        }
+        // 3. 값을 전달한 다음, 상세 화면으로 이동.
+        vc.param = row
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
 }

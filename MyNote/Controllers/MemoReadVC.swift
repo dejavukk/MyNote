@@ -20,8 +20,7 @@ class MemoReadVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-        
+        // 제목, 내용, 이미지 출력.
         self.subject.text = param?.title
         self.contents.text = param?.contents
         self.img.image = param?.image
@@ -31,6 +30,7 @@ class MemoReadVC: UIViewController {
         formatter.dateFormat = "dd일 HH:mm분에 작성됨."
         let dateString = formatter.string(from: (param?.regdate)!)
         
+        // 내비게이션 타이틀에 날짜 표시.
         self.navigationItem.title = dateString
         
     }
