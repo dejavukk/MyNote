@@ -8,6 +8,7 @@
 
 import UIKit
 
+// MARK: - 메모 목록 뷰컨트롤러
 class MemoListVC: UITableViewController {
     
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
@@ -16,7 +17,6 @@ class MemoListVC: UITableViewController {
     // 앱의 생명주기 관련. 최초에 뷰가 로드되는 시점에만 호출.
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         
     }
     

@@ -8,6 +8,7 @@
 
 import UIKit
 
+// MARK: - 메모 읽기 뷰컨트롤러
 class MemoReadVC: UIViewController {
     
     // 콘텐츠 데이터를 저장하는 변수

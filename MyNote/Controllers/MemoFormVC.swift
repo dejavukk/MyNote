@@ -8,6 +8,7 @@
 
 import UIKit
 
+// MARK: - 메모 작성 뷰컨트롤러
 class MemoFormVC: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextViewDelegate {
     
     // 내용의 첫 줄을 추춘하여 제목으로 사용하는 변수.
@@ -23,16 +24,6 @@ class MemoFormVC: UIViewController, UIImagePickerControllerDelegate, UINavigatio
         self.contents.delegate = self
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
     
     // 메모 저장
     @IBAction func save(_ sender: Any) {
