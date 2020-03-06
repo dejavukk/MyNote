@@ -22,7 +22,7 @@
 
 /* Begin PBXFileReference section */
 		040D48CB24129DA100A267A5 /* fountainpen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fountainpen@2x.png"; sourceTree = "<group>"; };
-		043492AB23FADCF7003209AA /* MyNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		043492AB23FADCF7003209AA /* 마이노트.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "마이노트.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		043492AE23FADCF7003209AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		043492B023FADCF7003209AA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		043492B523FADCF7003209AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -67,7 +67,7 @@
 		043492AC23FADCF7003209AA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				043492AB23FADCF7003209AA /* MyNote.app */,
+				043492AB23FADCF7003209AA /* 마이노트.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -133,7 +133,7 @@
 			);
 			name = MyNote;
 			productName = MyNote;
-			productReference = 043492AB23FADCF7003209AA /* MyNote.app */;
+			productReference = 043492AB23FADCF7003209AA /* 마이노트.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -346,7 +346,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.junhyuk.MyNote;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "마이노트";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -364,7 +364,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.junhyuk.MyNote;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "마이노트";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
