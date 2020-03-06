@@ -74,6 +74,7 @@ class MemoListVC: UITableViewController {
             
             return
         }
+        
         // 3. 값을 전달한 다음, 상세 화면으로 이동.
         vc.param = row
         self.navigationController?.pushViewController(vc, animated: true)

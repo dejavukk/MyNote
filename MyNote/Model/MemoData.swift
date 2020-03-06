@@ -18,4 +18,5 @@ class MemoData {
     var regdate: Date?
     
     
+    
 }

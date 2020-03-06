@@ -21,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		040D48CB24129DA100A267A5 /* fountainpen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fountainpen@2x.png"; sourceTree = "<group>"; };
 		043492AB23FADCF7003209AA /* MyNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		043492AE23FADCF7003209AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		043492B023FADCF7003209AA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +48,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		040D48CA24129D9C00A267A5 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				040D48CB24129DA100A267A5 /* fountainpen@2x.png */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 		043492A223FADCF7003209AA = {
 			isa = PBXGroup;
 			children = (
@@ -66,6 +75,7 @@
 		043492AD23FADCF7003209AA /* MyNote */ = {
 			isa = PBXGroup;
 			children = (
+				040D48CA24129D9C00A267A5 /* Resource */,
 				043492AE23FADCF7003209AA /* AppDelegate.swift */,
 				043492B023FADCF7003209AA /* SceneDelegate.swift */,
 				043492BF23FADCF9003209AA /* Info.plist */,

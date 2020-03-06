@@ -10,7 +10,6 @@ import UIKit
 
 class MemoCell: UITableViewCell {
     
-    
     // 이미지가 표현된 셀의 아웃렛변수 추가
     @IBOutlet var subject: UILabel!
     @IBOutlet var contents: UILabel!
