@@ -69,6 +69,31 @@ class MemoFormVC: UIViewController, UIImagePickerControllerDelegate, UINavigatio
     // 이미지 가져오기.
     @IBAction func pick(_ sender: Any) {
         
+        let alert = UIAlertController(title: "이미지를 가져올 곳을 선택해주세요.", message: "", preferredStyle: .actionSheet)
+        
+        let library =  UIAlertAction(title: "사진앨범", style: .default) { (action) in self.openLibrary()
+
+        }
+
+
+        let camera =  UIAlertAction(title: "카메라", style: .default) { (action) in
+
+        self.openCamera()
+
+        }
+
+
+        let cancel = UIAlertAction(title: "취소", style: .cancel, handler: nil)
+
+
+        alert.addAction(library)
+
+        alert.addAction(camera)
+
+        alert.addAction(cancel)
+        
+        present(alert, animated: true, completion: nil)
+
         // 인스턴스 생성
         let picker = UIImagePickerController()
         
@@ -79,6 +104,24 @@ class MemoFormVC: UIViewController, UIImagePickerControllerDelegate, UINavigatio
         self.present(picker, animated: false)
         
     }
+    
+    func openLibrary(){
+
+      picker.sourceType = .photoLibrary
+
+      present(picker, animated: false, completion: nil)
+
+    }
+
+    func openCamera(){
+
+      picker.sourceType = .camera
+
+      present(picker, animated: false, completion: nil)
+
+    }
+
+
     
     // 이미지를 선택했을 때 호출되는 메소드
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
